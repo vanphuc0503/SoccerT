@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.soccert.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailTeamFragment"
+            app:destination="@id/detailTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.soccert.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_regionFragment"
+            app:destination="@id/regionFragment" />
+        <argument
+            android:name="countryID"
+            android:defaultValue="-1"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailMatchFragment"
+            app:destination="@id/detailMatchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailTeamFragment"
+            app:destination="@id/detailTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.soccert.ui.more.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_moreFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.soccert.ui.news.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsWebFragment"
+            app:destination="@id/newsWebFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regionFragment"
+        android:name="com.example.soccert.ui.region.RegionFragment"
+        android:label="RegionFragment"
+        tools:layout="@layout/fragment_region">
+        <action
+            android:id="@+id/action_regionFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsWebFragment"
+        android:name="com.example.soccert.ui.news.NewsWebFragment"
+        android:label="NewsWebFragment" >
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.soccert.ui.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_detailMatchFragment"
+            app:destination="@id/detailMatchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMatchFragment"
+        android:name="com.example.soccert.ui.detailmatch.DetailMatchFragment"
+        android:label="DetailMatchFragment"
+        tools:layout="@layout/fragment_detail_match">
+        <argument
+            android:name="eventID"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailMatchFragment_to_detailTeamFragment"
+            app:destination="@id/detailTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTeamFragment"
+        android:name="com.example.soccert.ui.detailteam.DetailTeamFragment"
+        android:label="DetailTeamFragment"
+        tools:layout="@layout/fragment_detail_team">
+        <argument
+            android:name="team"
+            app:argType="com.example.soccert.data.model.Team" />
+    </fragment>
+</navigation>

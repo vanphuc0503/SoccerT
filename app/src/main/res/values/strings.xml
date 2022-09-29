@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SoccerT</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_news">News</string>
+    <string name="title_more">More</string>
+    <string name="title_choose_country">Choose a country</string>
+    <string name="title_match_events">Match Events</string>
+    <string name="title_standing">Standing</string>
+    <string name="title_team">Teams</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_lineups">Lineups</string>
+    <string name="title_starting_lineup">Starting lineup</string>
+    <string name="title_substitute">Substitute</string>
+    <string name="title_coach">Coach</string>
+    <string name="title_goalkeeper">Goalkeeper</string>
+    <string name="title_name">Name</string>
+    <string name="title_number">Number</string>
+    <string name="title_defender">Defender</string>
+    <string name="title_midfielder">Midfielder</string>
+    <string name="title_forward">Forward</string>
+    <string name="title_notification">Notifications</string>
+    <string name="title_internet_notification">Notification</string>
+    <string name="title_alert">Alert!</string>
+
+    <string name="error_default">Error!</string>
+    <string name="error_delete_notification">Error delete Notification!</string>
+    <string name="error_convert_type">Error convert data type!</string>
+
+    <string name="text_from_event">"From: "</string>
+    <string name="text_to_event">To:</string>
+    <string name="text_popular_leagues">Popular leagues</string>
+    <string name="text_date_holder">%d-%d-%d</string>
+    <string name="text_search">Search…</string>
+    <string name="text_share_app">Share App</string>
+    <string name="text_info_app">Info App</string>
+    <string name="text_notification">Notification</string>
+    <string name="text_change_theme">Change Theme</string>
+    <string name="text_extra_intent_share_app">This is my text to send.</string>
+    <string name="text_developer">Developer: Nguyễn Văn Phúc</string>
+    <string name="text_product">Product: SoccerT</string>
+    <string name="text_pos">Pos</string>
+    <string name="text_team">Team</string>
+    <string name="text_ptl">Pld</string>
+    <string name="text_w">W</string>
+    <string name="text_d">D</string>
+    <string name="text_l">L</string>
+    <string name="text_gd">GD</string>
+    <string name="text_pts">Pts</string>
+    <string name="text_season_20_21">Season 2020–2021</string>
+    
+    <string name="msg_notification_check_internet">Maybe! Do you not open the internet?</string>
+    <string name="msg_notification_delelete_or_no">Are you sure to delete the notification?</string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="title_vietnamese">Vietnam</string>
+    <string name="title_usa">Usa</string>
+    <string name="title_new_event">New Event !</string>
+    <string name="text_open_soccer"><![CDATA[Open SoccerT right now <3]]></string>
+    <string name="text_upcoming">Upcoming...</string>
+</resources>
